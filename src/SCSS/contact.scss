@@ -3,7 +3,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     background-color: $charcoal;
-    height: 1080px;
+    height: 900px;
     color: $whitish;
     margin: 0;
 
@@ -54,7 +54,7 @@
             width: 37%;
             height: 50px;
             font-size: 2.2rem;
-            margin: 20px auto 0 auto;
+            margin: 20px auto 70px auto;
         }
 
         button:hover {
@@ -71,12 +71,14 @@
 
         img {
             width: 3%;
-            margin: 100px 5% 30px 5%;
-            height: 45px;
+            margin: 30px 5% 30px 5%;
+            height: 55px;
         }
 
         img:hover {
-            fill: red;
+            background: $whitish;
+            border-radius: 10px;
+            cursor: pointer;
         }
     }
 

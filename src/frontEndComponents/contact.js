@@ -43,6 +43,11 @@ class Contact extends React.Component {
             <section className="contact-form" id='contact-section'>
                 <h2>Contact</h2>
     
+                <div className="icons">
+                    <img src={github} alt="github" />
+                    <img src={linkedIn} alt="linkedIn" />
+                </div>
+                    
                 <form
                     name="contactForm"
                     onSubmit={this.handleSubmit}
@@ -78,12 +83,6 @@ class Contact extends React.Component {
     
                     <button type="submit">Send Message</button>
                 </form>
-    
-                <div className="icons">
-                    <img src={github} alt="github" />
-                    <img src={linkedIn} alt="linkedIn" />
-                    <img src={email} alt="email" />
-                </div>
     
                 <p>Jordan D. Spell © 2019</p>
             </section>
