@@ -1,9 +1,12 @@
 import React from 'react';
+import Particles from 'react-particles-js';
+
+let particlesOptions = require('../JS/particles.json');
 
 function Header() {
     return (
         <header>
-            <div id="particles-js">
+            <Particles className='particles' params={particlesOptions}>
                 <nav>
                     <a href="#" id='about' >About</a>
                     <a href="#" id='projects' >Projects</a>
@@ -16,7 +19,7 @@ function Header() {
                     <button id="exploreBtn" className="exploreBtn" >Explore</button>
                 </div>
                 
-            </div>
+            </Particles>
         </header> 
     );
 }
