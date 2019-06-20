@@ -5,6 +5,10 @@ header {
     
     .particleHeader{
 
+        .navbar > .active {
+            border-bottom: 1px solid $whitish;
+        }
+
         nav {
             display: flex;
             flex-flow: row nowrap;

@@ -5,15 +5,16 @@ import About from './frontEndComponents/about';
 import Projects from './frontEndComponents/projects';
 import Contact from './frontEndComponents/contact';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <About />
       <Projects />
       <Contact />
     </div>
-  );
+  );  
 }
 
 export default App;

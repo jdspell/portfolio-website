@@ -1,8 +1,8 @@
 .Projects {
-    height: 1080px;
+    height: 100vh;
     background-color: $lighterGray;
     margin: 0;
-    padding-top: 120px;
+    padding: 50px 0 40px 0;
 
     h2 {
         text-align: center;
@@ -13,7 +13,7 @@
     h3 {
         text-align: center;
         font-size: 3rem;
-        margin-top: 35px;
+        margin-top: 25px;
     }
     
     .portfolio {
@@ -22,13 +22,32 @@
         width: 100%;
 
         .project {
-            width: 25%;
-            margin: 5%;
+            width: 30%;
+            margin: 30px 10% 0 10%;
             padding: 2px;
             border: 4px groove darkgray;
 
             img {
                 width: 100%;
+            }
+
+            h3 {
+                font-size: 2.7rem;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                font-size: 1.9rem;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                padding-left: 20px;
+
+                li {
+                    font-size: 1.7rem;
+                    margin-bottom: 10px;
+                }
             }
         }
 
