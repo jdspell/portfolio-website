@@ -5,15 +5,15 @@ import worther from "../images/worther.png";
 
 function Projects() {
     return (
-        <section class="Projects" id='projects-section'>
+        <section className="Projects" id='projects-section'>
 
             <h2>Projects</h2>
             <h3>Click on a project link to learn more.</h3>
 
-            <div class="portfolio">
+            <div className="portfolio">
 
-                <div class="project">
-                    <img class="" src={mentrMatch} alt="mentrMatch" />
+                <div className="project">
+                    <img src={mentrMatch} alt="mentrMatch" />
 
                     <h3>MentrMatch</h3>
                     
@@ -49,8 +49,8 @@ function Projects() {
                 </div>
 
 
-                <div class="project">
-                    <img class="" src={worther} alt="worther" />
+                <div className="project">
+                    <img src={worther} alt="worther" />
                     <h3>Worther</h3>
 
                     <a href="https://worther-marketing.netlify.com/" >
