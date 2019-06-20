@@ -8,7 +8,7 @@ function Projects() {
         <section class="Projects" id='projects-section'>
 
             <h2>Projects</h2>
-            <h3>Click on a project to learn more.</h3>
+            <h3>Click on a project link to learn more.</h3>
 
             <div class="portfolio">
 
@@ -16,8 +16,14 @@ function Projects() {
                     <img class="" src={mentrMatch} alt="mentrMatch" />
 
                     <h3>MentrMatch</h3>
-                    <h5>https://mentrmatch.netlify.com/</h5>
-                    <h5>https://mentrmatch.netlify.com/</h5>
+                    
+                    <a href="https://mentrmatch.netlify.com/" >
+                        https://mentrmatch.netlify.com/
+                    </a>
+
+                    <a href="https://github.com/labs12-mentor" >
+                        https://github.com/labs12-mentor
+                    </a>
 
                     <h5>App matches mentors to students within an organization.</h5>
 
@@ -46,8 +52,14 @@ function Projects() {
                 <div class="project">
                     <img class="" src={worther} alt="worther" />
                     <h3>Worther</h3>
-                    <h5>https://worther-marketing.netlify.com/</h5>
-                    <h5>https://github.com/appraisers-bff/Frontend-Architects</h5>
+
+                    <a href="https://worther-marketing.netlify.com/" >
+                        https://worther-marketing.netlify.com/
+                    </a>
+
+                    <a href="https://github.com/appraisers-bff/Frontend-Architects" >
+                        https://github.com/appraisers-bff/Frontend-Architects
+                    </a>
 
                     <h5>App provides an estimate of a home's value in LA.</h5>
                     
