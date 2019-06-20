@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import github from "../images/github.svg";
 import linkedIn from "../images/linkedin.svg";
@@ -8,22 +9,32 @@ class Contact extends React.Component {
     state = {
         name: '',
         email: '',
-        message: ''
+        mailBody: ''
     }
 
     handleChange = e => {
         this.setState({
             [e.target.name]: e.target.value
-        })
+        });
     }
 
-    handleSubmit = e => {
+    handleSubmit = async (e) => {
         e.preventDefault();
         console.log(this.state);
+        const mailBody = {...this.state}
+        console.log('mailBody', mailBody);
+        await axios
+            .post('http://localhost:5001/', mailBody)
+            .then(res => {
+                console.log("hello");
+                console.log(res);
+            });
+        console.log("Sent message");
+
         this.setState({
             name: '',
             email: '',
-            message: ''
+            mailBody: ''
         });
     }
 
@@ -32,11 +43,8 @@ class Contact extends React.Component {
             <section className="contact-form" id='contact-section'>
                 <h2>Contact</h2>
     
-                <form 
-                    method="post" 
-                    name="contactForm" 
-                    id="contactForm" 
-                    role="form"
+                <form
+                    name="contactForm"
                     onSubmit={this.handleSubmit}
                 >
                     <div>
@@ -60,7 +68,12 @@ class Contact extends React.Component {
                     </div>
     
                     <div>
-                        <textarea name="message" placeholder="Message" ></textarea>
+                        <textarea 
+                            name="mailBody" 
+                            placeholder="Message" 
+                            value={this.state.mailBody}
+                            onChange={this.handleChange}
+                        />
                     </div>
     
                     <button type="submit">Send Message</button>

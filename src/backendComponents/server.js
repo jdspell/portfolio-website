@@ -1,11 +1,16 @@
 const express = require('express');
-const http = require('http');
+const cors = require('cors');
 
 const router = require('./apiContact');
 
-const apiServer = express();
-const server = http.createServer(apiServer);
+const server = express();
 
-apiServer.use('/', router);
+server.use(cors());
+server.use(express.json());
+server.use(express.urlencoded({
+    extended: false
+}));
+
+server.use('/', router);
 
 module.exports = server;

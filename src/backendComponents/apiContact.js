@@ -4,8 +4,7 @@ const router = require('express').Router();
 require('dotenv').config();
 
 // POST route for contact form
-router.route('/')
-    .post(sendEmailViaContactForm)
+router.post('/', sendEmailViaContactForm);
 
 const smmtpTransport = nodemailer.createTransport({
     service: 'Gmail',
@@ -17,7 +16,7 @@ const smmtpTransport = nodemailer.createTransport({
 });
 
 const mailOptions = {
-    from: '',
+    from: process.env.GMAIL_USER,
     to: '',
     replyTo: '',
     subject: '',
@@ -25,11 +24,15 @@ const mailOptions = {
 }
 
 async function sendEmailViaContactForm(req, res) {
+    console.log(req.body);
     try {
-        const { email, name, mailBody } = req.mailBody
+        const { email, name, mailBody } = req.body
+
+        console.log(email, name, mailBody);
+
         await smmtpTransport.sendMail({
             ...mailOptions,
-            to: "mail address",
+            to: "jordan.spell1@gmail.com",
             replyTo: email,
             subject: `[Portfolio Site]: ${name} sent you a message!`,
             html: `
