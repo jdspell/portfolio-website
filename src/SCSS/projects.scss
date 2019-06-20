@@ -1,0 +1,39 @@
+.Projects {
+    height: 1080px;
+    background-color: $lighterGray;
+    margin: 0;
+    padding-top: 120px;
+
+    h2 {
+        text-align: center;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 35px;
+    }
+    
+    .portfolio {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+
+        .project {
+            width: 25%;
+            margin: 5%;
+            padding: 2px;
+            border: 4px groove darkgray;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .project:hover {
+            background-color: $whitish;
+        }
+    }
+}

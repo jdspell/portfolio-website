@@ -1,5 +1,9 @@
 import React from 'react';
 
+import github from "../images/github.svg";
+import linkedIn from "../images/linkedin.svg";
+import email from "../images/email.svg";
+
 class Contact extends React.Component {
     render() {
         return (
@@ -23,9 +27,9 @@ class Contact extends React.Component {
                 </form>
     
                 <div class="icons">
-                    <img src={"images/github.svg"} alt="github" />
-                    <img src={"images/linkedin.svg"} alt="linkedIn" />
-                    <img src={"images/email.svg"} alt="email" />
+                    <img src={github} alt="github" />
+                    <img src={linkedIn} alt="linkedIn" />
+                    <img src={email} alt="email" />
                 </div>
     
                 <p>Jordan D. Spell © 2019</p>
