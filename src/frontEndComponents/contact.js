@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import github from "../images/github.svg";
 import linkedIn from "../images/linkedin.svg";
-import email from "../images/email.svg";
 
 class Contact extends React.Component {
     state = {
@@ -44,8 +43,13 @@ class Contact extends React.Component {
                 <h2>Contact</h2>
     
                 <div className="icons">
-                    <a href="https://github.com/jdspell"><img src={github} alt="github" /></a>
-                    <a href="www.linkedin.com/in/jordan-spell"><img src={linkedIn} alt="linkedIn" /></a>
+                    <a href="https://github.com/jdspell">
+                        <img src={github} alt="github" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jordan-spell/">
+                        <img src={linkedIn} alt="linkedIn" />
+                    </a>
                 </div>
                     
                 <form
