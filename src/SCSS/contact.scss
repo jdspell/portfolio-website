@@ -69,16 +69,25 @@
         flex-flow: row nowrap;
         justify-content: center;
 
-        img {
+        a {
+
             width: 3%;
             margin: 30px 5% 30px 5%;
             height: 55px;
-        }
 
-        img:hover {
-            background: $whitish;
-            border-radius: 10px;
-            cursor: pointer;
+            img {
+                background: $whitish;
+                width: 100%;
+                border: 2px solid $whitish;
+                border-radius: 50%;
+            }
+    
+            img:hover {
+                background: $gold;
+                border: 2px solid $gold;
+                cursor: pointer;
+            }
+
         }
     }
 

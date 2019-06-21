@@ -44,8 +44,8 @@ class Contact extends React.Component {
                 <h2>Contact</h2>
     
                 <div className="icons">
-                    <img src={github} alt="github" />
-                    <img src={linkedIn} alt="linkedIn" />
+                    <a href="https://github.com/jdspell"><img src={github} alt="github" /></a>
+                    <a href="www.linkedin.com/in/jordan-spell"><img src={linkedIn} alt="linkedIn" /></a>
                 </div>
                     
                 <form
