@@ -10,13 +10,13 @@ const smmtpTransport = nodemailer.createTransport({
     service: 'Gmail',
     port: 465,
     auth: {
-        user: process.env.GMAIL_USER,
+        user: process.env.SENDER_GMAIL_ADDRESS,
         pass: process.env.GMAIL_PASS
     }
 });
 
 const mailOptions = {
-    from: process.env.GMAIL_USER,
+    from: process.env.SENDER_GMAIL_ADDRESS,
     to: '',
     replyTo: '',
     subject: '',
@@ -32,7 +32,7 @@ async function sendEmailViaContactForm(req, res) {
 
         await smmtpTransport.sendMail({
             ...mailOptions,
-            to: "jordan.spell1@gmail.com",
+            to: process.env.RECIPIENT_GMAIL_ADDRESS,
             replyTo: email,
             subject: `[Portfolio Site]: ${name} sent you a message!`,
             html: `

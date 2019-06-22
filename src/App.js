@@ -5,7 +5,6 @@ import About from './frontEndComponents/about';
 import Projects from './frontEndComponents/projects';
 import Contact from './frontEndComponents/contact';
 
-
 const App = () => {
   return (
     <div className="App">

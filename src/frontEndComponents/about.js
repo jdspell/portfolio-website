@@ -18,14 +18,14 @@ function About() {
             <h2>About</h2>
             <div className='profile'>
                 <img className="archer-lake" src={archerPic} alt="dog" />
-                <p className="summary">
-                    Hello, I'm Jordan. A full stack engineer who is passionate about technology and it's application for solving problems. 
-                    A team-oriented individual with the capability to self-learn and work independently when needed. Constantly trying to better
-                    myself as a person, problem solver and engineer. 
-                </p>
-                <div className="tech">
-
-                </div>
+                {/* <div className="resume-summary"> */}
+                    <p className="summary">
+                        Hello, I'm Jordan. A full stack engineer who is passionate about technology and it's application for solving problems. 
+                        A team-oriented individual with the capability to self-learn and work independently when needed. Constantly trying to better
+                        myself as a person, problem solver and engineer. 
+                    </p>
+                
+                {/* </div> */}
             </div>
 
             <div className="tech-stack">
