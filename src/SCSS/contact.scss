@@ -1,0 +1,99 @@
+.contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: $charcoal;
+    height: 900px;
+    color: $whitish;
+    margin: 0;
+
+    h2 {
+        text-align: center;
+        font-size: 6rem;
+        height: 100px;
+        color: $gold;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 0 auto;
+        width: 600px;
+        padding: 1em;
+        // border: 1px solid #CCC;
+        // border-radius: 1em;
+
+        div {
+            input {
+                margin: 15px;
+                width: 600px;
+                height: 60px;
+                border-radius: 7px;
+                border: none;
+                padding: 5px 10px;
+                font-size: 2.5rem;
+            }
+
+            textarea {
+                margin: 15px;
+                width: 600px;
+                height: 190px;
+                border-radius: 7px;
+                border: none;
+                padding: 5px 10px;
+                font-size: 2.8rem;
+            }
+        }
+
+        button {
+            background-color: $charcoal;
+            color: $whitish;
+            border: 2px solid $whitish;
+            text-align: center;
+            width: 37%;
+            height: 50px;
+            font-size: 2.2rem;
+            margin: 20px auto 70px auto;
+        }
+
+        button:hover {
+            background-color: $gold;
+            color: $charcoal;
+            font-weight: bold;
+        }
+    }
+
+    .icons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        a {
+
+            width: 3%;
+            margin: 30px 5% 30px 5%;
+            height: 55px;
+
+            img {
+                background: $whitish;
+                width: 100%;
+                border: 2px solid $whitish;
+                border-radius: 50%;
+            }
+    
+            img:hover {
+                background: $gold;
+                border: 2px solid $gold;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 2rem;
+        color: $gold;
+    }
+}
