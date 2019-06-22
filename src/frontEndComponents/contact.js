@@ -23,7 +23,7 @@ class Contact extends React.Component {
         const mailBody = {...this.state}
         console.log('mailBody', mailBody);
         await axios
-            .post('http://localhost:5001/', mailBody)
+            .post('https://jspellportfolio.herokuapp.com/', mailBody)
             .then(res => {
                 console.log("hello");
                 console.log(res);
