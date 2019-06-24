@@ -65,7 +65,7 @@ function Projects() {
                     
                     <ul>
                         <li>
-                            Took on role of Frontend engineer for construction of appraisal app by implementing user 
+                            Took on role of frontend engineer for construction of appraisal app by implementing user 
                             authentication, created layout of user profile and styled application
                         </li>
 

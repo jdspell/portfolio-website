@@ -20,8 +20,8 @@ function About() {
                 <img className="archer-lake" src={archerPic} alt="dog" />
                 {/* <div className="resume-summary"> */}
                     <p className="summary">
-                        Hello, I'm Jordan. A full stack engineer who is passionate about technology and it's application for solving problems. 
-                        A team-oriented individual with the capability to self-learn and work independently when needed. Constantly trying to better
+                        Hello, I'm Jordan. A full stack engineer who is passionate about technology and its application for solving problems. 
+                        A team-oriented individual with the capability to learn and work independently when needed. Constantly trying to better
                         myself as a person, problem solver and engineer. 
                     </p>
                 
