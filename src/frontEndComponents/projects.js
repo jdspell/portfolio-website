@@ -18,7 +18,7 @@ function Projects() {
                     <h3>MentrMatch</h3>
                     
                     <a href="https://mentormatch.netlify.com/" >
-                        https://mentrmatch.netlify.com/
+                        https://mentormatch.netlify.com/
                     </a>
 
                     <a href="https://github.com/labs12-mentor" >
