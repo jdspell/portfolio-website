@@ -19,6 +19,7 @@ header {
       width: $maxwidth;
       overflow: hidden;
       width: 100%;
+      z-index: 100;
 
       a {
         margin: 0 0 0 120px;
@@ -63,7 +64,7 @@ header {
       button {
         background-color: $charcoal;
         color: $whitish;
-        border: 1px solid $whitish;
+        border: 2px solid $charcoal;
         border-radius: 5px;
         height: 45px;
         width: 25%;
