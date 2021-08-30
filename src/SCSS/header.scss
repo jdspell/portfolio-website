@@ -64,6 +64,7 @@ header {
         background-color: $charcoal;
         color: $whitish;
         border: 1px solid $whitish;
+        border-radius: 5px;
         height: 45px;
         width: 25%;
         padding: 5px 0;
@@ -76,8 +77,12 @@ header {
       button:hover {
         background-color: $gold;
         color: $charcoal;
-        border: 1px solid $charcoal;
+        border: 2px solid $charcoal;
       }
     }
   }
+}
+
+canvas {
+  height: 100vh !important;
 }
