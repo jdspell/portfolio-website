@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Header from './frontEndComponents/header';
-import About from './frontEndComponents/about';
-import Projects from './frontEndComponents/projects';
-import Contact from './frontEndComponents/contact';
+import Header from "./frontend/header";
+import About from "./frontend/about";
+import Projects from "./frontend/projects";
+import Contact from "./frontend/contact";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <Projects />
       <Contact />
     </div>
-  );  
-}
+  );
+};
 
 export default App;
