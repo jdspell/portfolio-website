@@ -1,71 +1,82 @@
 .Projects {
-    height: 1080px;
-    background-color: $lighterGray;
-    margin: 0;
-    padding: 50px 0 50px 0;
+  height: 1080px;
+  background-color: $whitish; // $lighterGray;
+  margin: 0;
+  padding: 50px 0 50px 0;
 
-    h2 {
-        text-align: center;
-        font-size: 6rem;
-        font-weight: bold;
-    }
+  h2 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+  }
 
-    h3 {
-        text-align: center;
-        font-size: 3rem;
-        margin-top: 25px;
-    }
-    
-    .portfolio {
-        display: flex;
-        flex-flow: row nowrap;
+  h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+
+    .project {
+      width: 32%;
+      margin: 30px 9% 0 9%;
+      padding: 8px;
+      border: 10px groove darkgray;
+
+      img {
         width: 100%;
+      }
 
-        .project {
-            width: 32%;
-            margin: 30px 9% 0 9%;
-            padding: 8px;
-            border: 10px groove darkgray;
+      h3 {
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+      }
 
-            img {
-                width: 100%;
-            }
+      h5 {
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+      }
 
-            h3 {
-                font-size: 3.2rem;
-                margin-bottom: 20px;
-            }
+      a {
+        text-decoration: none;
+        display: block;
+        color: black;
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
 
-            h5 {
-                font-size: 1.9rem;
-                margin-bottom: 10px;
-            }
+      ul {
+        padding-left: 20px;
 
-            a {
-                text-decoration: none;
-                display: block;
-                color: black;
-                font-size: 1.9rem;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
-
-            ul {
-                padding-left: 20px;
-
-                li {
-                    font-size: 1.7rem;
-                    margin-bottom: 10px;
-                }
-            }
+        li {
+          font-size: 1.7rem;
+          margin-bottom: 10px;
         }
-
-        .project:hover {
-            background-color: $gold;
-
-            a:hover {
-                text-decoration: underline;
-            }
-        }
+      }
     }
+
+    .project:hover {
+      background-color: $gold;
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+hr {
+  color: $charcoal;
+  background-color: $charcoal;
+  height: 3px;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
