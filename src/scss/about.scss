@@ -1,6 +1,8 @@
 .About {
-  height: 1080;
   margin-bottom: 40px;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
 
   h2 {
     text-align: center;
@@ -14,15 +16,13 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
     padding-bottom: 50px;
 
     .archer-lake {
       width: 30%;
       height: 100%;
       border-radius: 25px;
-      border: 2px solid black;
+      border: 2px solid $charcoal;
     }
 
     .summary {
