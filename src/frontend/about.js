@@ -17,6 +17,7 @@ function About() {
     <section className="About" id="about-section">
       <h2>About</h2>
       <div className="profile">
+        <img className="archer-lake" src={archerPic} alt="dog" align="right" />
         <p className="summary">
           Hello, I'm Jordan. A full stack engineer who is passionate about
           technology and its application for solving problems. A team-oriented
@@ -24,7 +25,6 @@ function About() {
           needed. Constantly trying to better myself as a person, problem solver
           and engineer.
         </p>
-        <img className="archer-lake" src={archerPic} alt="dog" />
       </div>
 
       <div className="tech-stack">
