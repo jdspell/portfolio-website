@@ -29,9 +29,32 @@ function About() {
 
       <div className="tech-stack">
         <h3>Technical Skills</h3>
-        <h4>Languages</h4>
-        <h4>Frameworks/Libraries</h4>
-        <div className="skills">
+        <div>
+          <h4>Languages</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS/TS</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Frameworks/Libraries</h4>
+          <ul>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>LESS/SASS</li>
+          </ul>
+          <ul>
+            <li>Spring</li>
+            <li>NodeJS</li>
+            <li>Express</li>
+          </ul>
+        </div>
+        {/* <div className="skills">
           <div className="skill">
             <img src={javascript} alt="javascript" />
             <h4>Javascript</h4>
@@ -81,7 +104,7 @@ function About() {
             <img src={knex} alt="knex" />
             <h4>Knex</h4>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
