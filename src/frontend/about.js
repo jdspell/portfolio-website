@@ -29,6 +29,8 @@ function About() {
 
       <div className="tech-stack">
         <h3>Technical Skills</h3>
+        <h4>Languages</h4>
+        <h4>Frameworks/Libraries</h4>
         <div className="skills">
           <div className="skill">
             <img src={javascript} alt="javascript" />
