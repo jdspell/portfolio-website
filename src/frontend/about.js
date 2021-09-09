@@ -29,30 +29,34 @@ function About() {
 
       <div className="tech-stack">
         <h3>Technical Skills</h3>
-        <div class="languages">
-          <h4>Languages</h4>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JS/TS</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-          </ul>
-        </div>
-        <div class="frameworks-libraries">
-          <h4>Frameworks/Libraries</h4>
-          <ul class="frontend">
-            <li>Angular</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>LESS/SASS</li>
-          </ul>
-          <ul class="backend">
-            <li>Spring</li>
-            <li>NodeJS</li>
-            <li>Express</li>
-          </ul>
+        <div class="tech-stack-content">
+          <div class="languages">
+            <h4>Languages</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JS/TS</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C</li>
+            </ul>
+          </div>
+          <div class="frameworks">
+            <h4>Frameworks/Libraries</h4>
+            <div class="framework-content">
+              <ul class="frontend">
+                <li>Angular</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>LESS/SASS</li>
+              </ul>
+              <ul class="backend">
+                <li>Spring</li>
+                <li>NodeJS</li>
+                <li>Express</li>
+              </ul>
+            </div>
+          </div>
         </div>
         {/* <div className="skills">
           <div className="skill">
