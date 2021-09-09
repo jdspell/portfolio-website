@@ -11,6 +11,10 @@ import redux from "../images/redux.svg";
 import node from "../images/nodejs.svg";
 import express from "../images/express.svg";
 import knex from "../images/knex.svg";
+import angular from "../images/angular.svg";
+import python from "../images/python.svg";
+import java from "../images/java.svg";
+import spring from "../images/spring.svg";
 
 function About() {
   return (
@@ -33,27 +37,62 @@ function About() {
           <div class="languages">
             <h4>Languages</h4>
             <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JS/TS</li>
-              <li>Python</li>
-              <li>Java</li>
-              <li>C</li>
+              <li>
+                <img class="tech-stack-img" src={html} alt="html5" />
+                HTML5
+              </li>
+              <li>
+                <img class="tech-stack-img" src={css} alt="css3" />
+                CSS3
+              </li>
+              <li>
+                <img class="tech-stack-img" src={javascript} alt="javascript" />
+                JS/TS
+              </li>
+              <li>
+                <img class="tech-stack-img" src={python} alt="python" />
+                Python
+              </li>
+              <li>
+                <img class="tech-stack-img" src={java} alt="java" />
+                Java
+              </li>
             </ul>
           </div>
           <div class="frameworks">
             <h4>Frameworks/Libraries</h4>
             <div class="framework-content">
               <ul class="frontend">
-                <li>Angular</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>LESS/SASS</li>
+                <li>
+                  <img class="tech-stack-img" src={angular} alt="angular" />
+                  Angular
+                </li>
+                <li>
+                  <img class="tech-stack-img" src={react} alt="react" />
+                  React
+                </li>
+                <li>
+                  <img class="tech-stack-img" src={redux} alt="redux" />
+                  Redux
+                </li>
+                <li>
+                  <img class="tech-stack-img" src={less} alt="less" />
+                  LESS/SASS
+                </li>
               </ul>
               <ul class="backend">
-                <li>Spring</li>
-                <li>NodeJS</li>
-                <li>Express</li>
+                <li>
+                  <img class="tech-stack-img" src={spring} alt="spring" />
+                  Spring
+                </li>
+                <li>
+                  <img class="tech-stack-img" src={node} alt="nodejs" />
+                  NodeJS
+                </li>
+                <li>
+                  <img class="tech-stack-img" src={express} alt="express" />
+                  Express
+                </li>
               </ul>
             </div>
           </div>
