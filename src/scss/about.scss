@@ -49,11 +49,12 @@
 .tech-stack-content {
   display: flex;
   flex-flow: row wrap;
+  font-size: 2.9rem;
 }
 
 .languages,
 .frameworks {
-  margin: 10px;
+  margin: 20px;
 }
 
 .framework-content {
