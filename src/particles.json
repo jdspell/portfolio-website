@@ -1,4 +1,5 @@
 {
+  "fullScreen": { "enable": false, "zIndex": 0 },
   "particles": {
     "number": {
       "value": 400
@@ -27,6 +28,9 @@
       "direction": "bottom",
       "straight": false
     }
+  },
+  "fullscreen": {
+    "enable": false
   },
   "interactivity": {
     "events": {
