@@ -49,23 +49,6 @@ const Header = () => {
           Contact
         </Link>
       </nav>
-
-      <div className="info">
-        <h1>Jordan Spell</h1>
-        <h2>Full Stack Software Engineer</h2>
-        <button id="exploreBtn" className="exploreBtn">
-          <Link
-            activeclass="active"
-            to="about-section"
-            spy={true}
-            smooth="true"
-            offset={-70}
-            duration={500}
-          >
-            Explore
-          </Link>
-        </button>
-      </div>
     </div>
   );
 };

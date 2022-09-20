@@ -1,35 +1,32 @@
 import React from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+import { Link } from "react-scroll";
 
 import Header from "./header";
-
-let particlesConfig = require("../particles.json");
+import Particles from "./Particles";
 
 const Home = () => {
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
   return (
     <header id="intro">
       <Header />
-      <Particles
-        id="tsparticles"
-        className="particles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={particlesConfig}
-        style={{ height: "100%" }}
-      />
+      <div className="info">
+        <h1>Jordan Spell</h1>
+        <h2>Full Stack Software Engineer</h2>
+        <button id="exploreBtn" className="exploreBtn">
+          <Link
+            activeclass="active"
+            to="about-section"
+            spy={true}
+            smooth="true"
+            offset={-70}
+            duration={500}
+          >
+            Explore
+          </Link>
+        </button>
+      </div>
+      <div id="particle-container">
+        <Particles id="tsparticles" />
+      </div>
     </header>
   );
 };
