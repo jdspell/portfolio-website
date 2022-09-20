@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-import Header from "./header";
+import Header from "./navbar/header";
 import Particles from "./Particles";
 
 const Home = () => {
